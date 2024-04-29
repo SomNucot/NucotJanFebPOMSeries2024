@@ -25,7 +25,7 @@ public class LoginPage {
 			public 	LoginPage(WebDriver odriver)
 			{
 							
-								
+				this.odriver=odriver;			
 							
 							
 			}

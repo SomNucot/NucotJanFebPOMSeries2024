@@ -1,9 +1,5 @@
 package com.qa.hrm.driverfactorysetup;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -15,19 +11,12 @@ public class DriverFactory {
 	
 	public WebDriver odriver;
 	
-	public static String highlight;
-	public Properties prop;
-	public OptionsManager optionsManager;
 	
 	public WebDriver initDriver()
 	{
 		
 		String browserName="chrome";
-		//optionsManager=new OptionsManager(prop);
-		
-		//String browserName=prop.getProperty("browser").trim().toLowerCase();
-		//highlight = prop.getProperty("highlight").trim();
-		//System.out.println("browser name is :"+browserName);
+		System.out.println("browser name is :"+browserName);
 		
 		if(browserName.equalsIgnoreCase("chrome")){
 			odriver=new ChromeDriver();
@@ -56,7 +45,7 @@ public class DriverFactory {
 	
 	
 	
-	
+	/*
 	public Properties initProp()
 	{
 		
@@ -74,7 +63,7 @@ public class DriverFactory {
 	
 		return prop;
 		
-		
+	*/	
 		
 	}
 	
@@ -91,4 +80,4 @@ public class DriverFactory {
 	
 	
 
-}
+
