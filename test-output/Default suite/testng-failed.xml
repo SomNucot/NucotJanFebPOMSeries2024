@@ -5,6 +5,7 @@
     <classes>
       <class name="com.qa.hrm.pagetests.LoginPageTest">
         <methods>
+          <include name="doLoginPageTest"/>
           <include name="loginPageCurrentUrl"/>
           <include name="loginPageTitle"/>
           <include name="setUp"/>

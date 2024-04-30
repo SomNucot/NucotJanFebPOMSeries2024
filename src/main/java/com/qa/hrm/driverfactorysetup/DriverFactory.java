@@ -1,5 +1,9 @@
 package com.qa.hrm.driverfactorysetup;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -7,22 +11,26 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
+
+
 public class DriverFactory {
 	
 	public WebDriver odriver;
+	public Properties 	prop;
+	public OptionsManager optionsManager;
 	
-	
-	public WebDriver initDriver()
+	public WebDriver initDriver(Properties prop)
 	{
 		
-		String browserName="chrome";
+		optionsManager=new OptionsManager(prop);
+		String browserName=prop.getProperty("browser").trim();
 		System.out.println("browser name is :"+browserName);
 		
 		if(browserName.equalsIgnoreCase("chrome")){
-			odriver=new ChromeDriver();
+			odriver=new ChromeDriver(optionsManager.getChromeOptions());
 		}
 		else if(browserName.equalsIgnoreCase("firefox")){
-			odriver=new FirefoxDriver();
+			odriver=new FirefoxDriver(optionsManager.getFirefoxOptions());
 		}	
 		else if(browserName.equalsIgnoreCase("safari")){
 			odriver=new SafariDriver();
@@ -39,21 +47,21 @@ public class DriverFactory {
 		
 		odriver.manage().deleteAllCookies();
 		odriver.manage().window().maximize();
-		odriver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		odriver.get(prop.getProperty("url"));
 		return odriver;	
 	}
 	
 	
 	
-	/*
+	
 	public Properties initProp()
 	{
 		
-	 prop =new Properties ();
+		Properties prop =new Properties ();
 	 
 	 try {
 		
-		 FileInputStream ip=new  FileInputStream("./src/main/resources/config/devconfig.properties");
+		 FileInputStream ip=new  FileInputStream("./src/resource/main/config/configdev.properties");
 		 prop.load(ip);
 	} catch (IOException e) {
 		// TODO Auto-generated catch block
@@ -63,12 +71,12 @@ public class DriverFactory {
 	
 		return prop;
 		
-	*/	
+	
 		
 	}
 	
 	
-	
+}
 	
 	
 	

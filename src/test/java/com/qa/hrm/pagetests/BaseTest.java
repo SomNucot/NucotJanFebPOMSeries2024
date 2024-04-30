@@ -1,5 +1,7 @@
 package com.qa.hrm.pagetests;
 
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -13,14 +15,15 @@ public class BaseTest {
 	DriverFactory df;
 	WebDriver odriver;
 	protected LoginPage loginPage;
-	
+	Properties prop;
 	
 	
 	@BeforeTest
 	public void setUp()
 	{
 		df=new DriverFactory();
-		odriver=df.initDriver();
+		prop=df.initProp();
+		odriver=df.initDriver(prop);
 		loginPage=new LoginPage(odriver);
 		
 		
