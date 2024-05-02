@@ -1,33 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-30T07:42:59 IST" name="Default suite" finished-at="2024-04-30T07:43:17 IST" duration-ms="17346">
+  <suite started-at="2024-05-02T07:12:56 IST" name="Nucot JanFeb Selenium TestNg seesions" finished-at="2024-05-02T07:13:07 IST" duration-ms="11661">
     <groups>
+      <group name="Smoke">
+        <method signature="LoginPageTest.loginPageTitle()[pri:0, instance:com.qa.hrm.pagetests.LoginPageTest@3232a28a]" name="loginPageTitle" class="com.qa.hrm.pagetests.LoginPageTest"/>
+      </group> <!-- Smoke -->
     </groups>
-    <test started-at="2024-04-30T07:42:59 IST" name="Default test" finished-at="2024-04-30T07:43:17 IST" duration-ms="17346">
+    <test started-at="2024-05-02T07:12:56 IST" name="HRM Application Nucot" finished-at="2024-05-02T07:13:07 IST" duration-ms="11661">
       <class name="com.qa.hrm.pagetests.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2024-04-30T07:42:59 IST" name="setUp" finished-at="2024-04-30T07:43:10 IST" duration-ms="10523" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.qa.hrm.pagetests.LoginPageTest@3232a28a]" started-at="2024-05-02T07:12:56 IST" name="setUp" finished-at="2024-05-02T07:13:07 IST" duration-ms="11468" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginPageCurrentUrl()[pri:1, instance:com.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2024-04-30T07:43:10 IST" name="loginPageCurrentUrl" finished-at="2024-04-30T07:43:10 IST" duration-ms="59" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageCurrentUrl -->
-        <test-method signature="loginPageTitle()[pri:2, instance:com.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2024-04-30T07:43:10 IST" name="loginPageTitle" finished-at="2024-04-30T07:43:10 IST" duration-ms="9" status="PASS">
+        <test-method signature="loginPageTitle()[pri:0, instance:com.qa.hrm.pagetests.LoginPageTest@3232a28a]" started-at="2024-05-02T07:13:07 IST" name="loginPageTitle" finished-at="2024-05-02T07:13:07 IST" duration-ms="38" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitle -->
-        <test-method signature="doLoginPageTest()[pri:3, instance:com.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2024-04-30T07:43:10 IST" name="doLoginPageTest" finished-at="2024-04-30T07:43:17 IST" duration-ms="6617" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLoginPageTest -->
-        <test-method is-config="true" signature="appClose()[pri:0, instance:com.qa.hrm.pagetests.LoginPageTest@156b88f5]" started-at="2024-04-30T07:43:17 IST" name="appClose" finished-at="2024-04-30T07:43:17 IST" duration-ms="93" status="PASS">
+        <test-method is-config="true" signature="appClose()[pri:0, instance:com.qa.hrm.pagetests.LoginPageTest@3232a28a]" started-at="2024-05-02T07:13:07 IST" name="appClose" finished-at="2024-05-02T07:13:07 IST" duration-ms="106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- appClose -->
       </class> <!-- com.qa.hrm.pagetests.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- HRM Application Nucot -->
+  </suite> <!-- Nucot JanFeb Selenium TestNg seesions -->
 </testng-results>

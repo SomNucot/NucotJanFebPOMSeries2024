@@ -10,7 +10,7 @@ import com.qa.hrm.applicationconstants.ApplicationConstants;
 public class LoginPageTest extends BaseTest {
 	
 	
-	@Test(priority=1)
+	@Test(groups = {"Regression"})	
 	public void loginPageCurrentUrl()
 	{
 		String actualUrl=loginPage.getLoginPageUrl();
@@ -18,7 +18,7 @@ public class LoginPageTest extends BaseTest {
 		
 	}
 	
-	@Test(priority=2)
+	@Test(groups = {"Smoke"})	
 	public void loginPageTitle()
 	{
 		
@@ -26,7 +26,7 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertEquals(actualTitle,ApplicationConstants.LOGIN_PAGE_TITLE);
 	}
 	
-	@Test(priority=3)
+	@Test(groups = {"Regression"})
 	public void doLoginPageTest()
 	{
 		loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));

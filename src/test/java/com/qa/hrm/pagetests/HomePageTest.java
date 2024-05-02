@@ -1,5 +1,5 @@
 package com.qa.hrm.pagetests;
 
-public class HomePageTest {
+public class HomePageTest extends BaseTest{
 
 }
