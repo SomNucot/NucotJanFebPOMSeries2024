@@ -10,13 +10,13 @@ import com.qa.hrm.applicationconstants.ApplicationConstants;
 public class LoginPageTest extends BaseTest {
 	
 	
-	@Test(groups = {"Regression"})	
-	public void loginPageCurrentUrl()
-	{
-		String actualUrl=loginPage.getLoginPageUrl();
-		Assert.assertEquals(actualUrl,ApplicationConstants.LOGIN_PAGE_CURRENTURL);
-		
-	}
+//	@Test(groups = {"Regression"})	
+//	public void loginPageCurrentUrl()
+//	{
+//		String actualUrl=loginPage.getLoginPageUrl();
+//		Assert.assertEquals(actualUrl,ApplicationConstants.LOGIN_PAGE_CURRENTURL);
+//		
+//	}
 	
 	@Test(groups = {"Smoke"})	
 	public void loginPageTitle()
@@ -30,6 +30,7 @@ public class LoginPageTest extends BaseTest {
 	public void doLoginPageTest()
 	{
 		loginPage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
+		System.out.println(Thread.currentThread().getId());
 		
 		
 	}

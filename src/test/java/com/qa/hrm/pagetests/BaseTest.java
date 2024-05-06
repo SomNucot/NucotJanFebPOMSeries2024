@@ -5,6 +5,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.qa.hrm.driverfactorysetup.DriverFactory;
 import com.qa.hrm.pages.LoginPage;
@@ -19,6 +20,7 @@ public class BaseTest {
 	
 	
 	@BeforeTest
+	@Parameters("browser")
 	public void setUp()
 	{
 		df=new DriverFactory();
