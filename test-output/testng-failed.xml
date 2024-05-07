@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Nucot JanFeb Selenium TestNg seesions]" guice-stage="DEVELOPMENT" verbose="4">
-  <test thread-count="2" parallel="tests" name="HRM Application Nucot(failed)" verbose="4">
-    <parameter name="browser" value="chrome"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.qa.hrm.pagetests.LoginPageTest">
         <methods>
@@ -12,5 +11,5 @@
         </methods>
       </class> <!-- com.qa.hrm.pagetests.LoginPageTest -->
     </classes>
-  </test> <!-- HRM Application Nucot(failed) -->
-</suite> <!-- Failed suite [Nucot JanFeb Selenium TestNg seesions] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
