@@ -12,13 +12,13 @@
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
-    <extentreports-version>5.0.8</extentreports-version>
-	<aspectj.version>1.9.5</aspectj.version>
-  </properties>
+ <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<extentreports-version>5.0.8</extentreports-version>
+		<aspectj.version>1.9.19</aspectj.version>
+	</properties>
 
   <dependencies>
     <dependency>
